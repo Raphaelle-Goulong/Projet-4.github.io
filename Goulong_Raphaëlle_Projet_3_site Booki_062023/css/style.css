@@ -362,8 +362,14 @@ input{
     color:var(--main-bg-color) ;
 }
 
+.afficher{
+    text-decoration: none;
+    color: black;
+}
+
 h2{
     font-size: 1.2rem;
+    
 }
 
 .hebergements-card a{
