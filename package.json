@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raphaelle-Goulong/Projet_4_Ohmyfood.github.io.git"
+  },
+  "author": "Raphaëlle Goulong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raphaelle-Goulong/Projet_4_Ohmyfood.github.io/issues"
+  },
+  "homepage": "https://github.com/Raphaelle-Goulong/Projet_4_Ohmyfood.github.io#readme"
+}
