@@ -52,17 +52,33 @@ table {
   border-spacing: 0;
 }
 
-@media (max-width: 425px) {
-  * {
-    font-family: "Shrikhand", cursive;
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  box-shadow: 3px 3px 3px #d0d0d0;
+}
+@media (min-width: 320px) {
+  .navbar img {
+    width: 150px;
+    margin-bottom: 20px;
   }
-  .navbar {
-    width: 100%;
-    background-color: aqua;
-  }
-  .navbar .navbar__logo {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.search input {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -49,21 +49,40 @@ table {
 }
 
 
+*{
+	font-family: $fontTitle;
+}
+	
+.navbar{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 3px;
+	box-shadow: 3px 3px 3px $backgroundshadow;
+	
+		@media (min-width:320px) {
+			img{
+				width: 150px;
+				margin-bottom: 20px;	
+			}
 
-
-@media (max-width: 425px){
-	*{
-		font-family: $fontText;
-	}
-	.navbar{
-		width: 100%;
-		background-color: aqua;
-		.navbar__logo {
-			display: flex;
-			justify-content: center;
-			width: 100px;
-			
+			// &__search {
+						
+			// }
 		}
-
+}
+.search{
+	display: flex;
+	justify-content: center;
+	background-color: $backgroundinputgrey;
+	
+	input{
+		// border: none;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
 	}
+	
 }
