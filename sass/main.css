@@ -116,4 +116,49 @@ table {
   height: 50px;
   border: none;
   color: white;
+  box-shadow: 3px 3px 3px #d0d0d0;
+}
+
+.functioning {
+  background-color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.functioning .titleSection {
+  font-size: 1.2rem;
+  margin-right: 150px;
+  margin-bottom: 20px;
+}
+.functioning .card-fuctioning {
+  margin: 10px;
+  box-shadow: 3px 3px 3px #d0d0d0;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 90%;
+  border-radius: 15px;
+  height: 40px;
+  border: none;
+  font-size: 0.9rem;
+  padding-top: 25px;
+}
+.functioning span {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #9356dc;
+  border-radius: 20px;
+  color: white;
+  margin: 0px;
+}
+.functioning .fa-solid {
+  color: #7e7e7e;
+  font-size: 18px;
+  margin: 0 20px;
+}
+.functioning .fa-solid:hover {
+  color: #9356dc;
 }/*# sourceMappingURL=main.css.map */

@@ -12,5 +12,16 @@
         border: none;
         color: white;
        
+}
 
+@mixin card-fuctioning {
+  display: flex;
+  justify-content: center;
+  background-color: $backgroundgrey;
+  width: 90%;
+  border-radius: 15px;
+  height: 40px;
+  border: none;
+  font-size: 0.9rem;
+  padding-top: 25px;
 }

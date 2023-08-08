@@ -100,9 +100,10 @@ table {
 			}
 	
 }
+
 .mainRestaurant {
 	background-color: $backgroundgrey;
-	
+
 		.textUnderNav{
 			height: 220px;
 			padding: 20px;
@@ -119,10 +120,55 @@ table {
 						text-align: center;
 					}
 						.btn{
-							@include button;	
+							@include button;
+							@include under-nav-shadow;	
 						}
-			}			
+			}	
+}	
+
+.functioning{
+	background-color: $backgroundwhite;
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+		.titleSection{
+			font-size: 1.2rem;
+			margin-right: 150px;
+			margin-bottom: 20px;
+		}
+			.card-fuctioning{
+				margin: 10px;
+				@include under-nav-shadow;	
+				@include card-fuctioning
 				
+			}
+				span{
+					display: flex;
+					justify-content: center;
+					width: 20px;
+					height: 20px;
+					background-color: $violetbutton;
+					border-radius: 20px;
+					color: $backgroundwhite;
+					margin: 0px ;
+				}
+
+					.fa-solid{
+						color: $fontAwarsomeIcon;
+						font-size: 18px;
+						margin: 0 20px;
+						&:hover{
+							color: $violetbutton;
+						}
+					}
+
+
+
+
 }
+				
+
 
 // SECTION SEARCH END
