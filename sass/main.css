@@ -19,7 +19,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -67,7 +66,7 @@ table {
 }
 @media (min-width: 320px) {
   .navbar img {
-    width: 150px;
+    width: 170px;
     margin-bottom: 20px;
   }
 }
@@ -76,9 +75,45 @@ table {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
+  width: 100%;
+}
+.search .fa-location-dot {
+  margin-left: 80px;
+  margin-top: 20px;
 }
 .search input {
+  border: none;
   margin: 20px;
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #eaeaea;
+}
+
+.mainRestaurant {
+  background-color: #f6f6f6;
+}
+.mainRestaurant .textUnderNav {
+  height: 220px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mainRestaurant .textUnderNav h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+.mainRestaurant .textUnderNav .text {
+  text-align: center;
+}
+.mainRestaurant .textUnderNav .btn {
+  background: linear-gradient(#FF79DA, #9356dc);
+  width: 200px;
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
