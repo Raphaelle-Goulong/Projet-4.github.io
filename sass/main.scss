@@ -54,52 +54,57 @@ table {
 	font-family: $fontTitle;
 }
 	// NAV BAR
-.navbar{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 20px;
-	margin-bottom: 3px;
-	@include under-nav-shadow;
+.header{
 
-	
-		@media (min-width:320px) {
-			img{
-				width: 170px;
-				margin-bottom: 20px;	
+	&__navbar{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 3px;
+		@include under-nav-shadow;
+
+			@media (min-width:320px) {
+				img{
+					width: 170px;
+					margin-bottom: 20px;	
+				}
+
+				// &__search {
+							
+				// }
 			}
 
-			// &__search {
-						
-			// }
-		}
+	} 
+	&__search{
+		display: flex;
+		justify-content: center;
+		background-color: $backgroundinputgrey;
+		width: 100%;
+
+			.fa-location-dot {
+				margin-left: 80px;
+				margin-top: 20px;
+			}
+				input {
+					border: none;
+					margin: 20px;
+					display: flex;
+					justify-content: center;
+					font-weight: bold;
+					font-size: 1.0rem;
+					background-color: $backgroundinputgrey;
+				}
+		
+	}
 }
+
 	// NAV BAR END
 
 // SECTION SEARCH
 
-.search{
-	display: flex;
-	justify-content: center;
-	background-color: $backgroundinputgrey;
-	width: 100%;
 
-		.fa-location-dot {
-			margin-left: 80px;
-			margin-top: 20px;
-		}
-			input {
-				border: none;
-				margin: 20px;
-				display: flex;
-				justify-content: center;
-				font-weight: bold;
-				font-size: 1.0rem;
-				background-color: $backgroundinputgrey;
-			}
-	
-}
 
 .mainRestaurant {
 	background-color: $backgroundgrey;
@@ -123,7 +128,7 @@ table {
 							@include button;
 							@include under-nav-shadow;	
 						}
-			}	
+		}	
 }	
 
 .functioning{
@@ -134,14 +139,13 @@ table {
 	flex-wrap: wrap;
 
 		.titleSection{
-			font-size: 1.2rem;
-			margin-right: 150px;
-			margin-bottom: 20px;
+			@include titleSection;
+			margin-left: 40px;
 		}
 			.card-fuctioning{
 				margin: 10px;
 				@include under-nav-shadow;	
-				@include card-fuctioning
+				@include card-fuctioning;
 				
 			}
 				span{
@@ -163,11 +167,39 @@ table {
 							color: $violetbutton;
 						}
 					}
-
-
-
-
 }
+
+.cards-restaurant{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+		.titleSection{
+			@include titleSection;	
+		}
+			.cardsMenu{
+				width: 90%;
+				height: 250px;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+				background-color: $backgroundwhite;
+			
+					img{
+						width: 100%;
+						height: 60%;
+						border-top-left-radius: 15px;
+						border-top-right-radius: 15px;
+					}
+						.titles-cards{
+							padding-left: 10px;
+						}
+							.text-cards{
+								padding-left: 10px;
+							}
+			}
+}
+
+
+
 				
 
 

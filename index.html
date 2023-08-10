@@ -14,22 +14,24 @@
     <div class="loading"></div>
         <div class="container">
             <!-- NAV -->
-            <header>
-                <nav class="navbar">
+            <header class="hearder">
+                <nav class="header__navbar">
                     <img src="/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="Images du logo Ohmyfood"> 
                 </nav> 
             <!-- NAV END -->
             <!-- SECTION SEARCH -->
-                <div class="search">
+                <div class="header__search">
                     <i class="fa-solid fa-location-dot "></i>
-                    <input type="search" placeholder="  Paris, Belleville " >
+                    <form class="input">
+                         <input type="search" placeholder="  Paris, Belleville " >
+                    </form>
                 </div>   
             </header>
             <main class="mainRestaurant">
                 <section class="textUnderNav">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p class="text"> Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                    <button class="btn">Explorer nos restaurants</button>
+                    <a href="#"><button class="btn">Explorer nos restaurants</button></a>
                 </section>
             <!-- SECTION SEARCH END -->
                 <!-- Functioning -->
@@ -52,7 +54,19 @@
                     </article>
                 </section>
                 <!-- Functioning end -->
-                
+                <!-- Cards Menu -->
+                <section class="cards-restaurant">
+                    <h2 class="titleSection">Restaurants</h2>
+                        <article class="cardsMenu">
+                            <img src="/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image d'un plat sur une table de restaurant">
+                            <span>Nouveau</span>
+                            <h4 class="titles-cards">La palette du goût</h4>
+                            <p class="text-cards">Ménilmantant</p>
+                            <i class="fa-solid fa-heart"></i>
+                        </article>
+
+                </section>
+                <!-- Cards Menu End -->
         </main>
     </div>
 </body>
