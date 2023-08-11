@@ -125,6 +125,8 @@ table {
 						text-align: center;
 					}
 						.btn{
+							display: flex;
+							justify-content: center;
 							@include button;
 							@include under-nav-shadow;	
 						}
@@ -141,22 +143,25 @@ table {
 		.titleSection{
 			@include titleSection;
 			margin-left: 40px;
+			margin-top: 0;
 		}
 			.card-fuctioning{
-				margin: 10px;
 				@include under-nav-shadow;	
-				@include card-fuctioning;
-				
+				@include card-fuctioning;	
 			}
 				span{
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					width: 20px;
 					height: 20px;
 					background-color: $violetbutton;
 					border-radius: 20px;
 					color: $backgroundwhite;
 					margin: 0px ;
+					position: relative;
+					right: 10px;
+					// padding: 5px;
 				}
 
 					.fa-solid{
@@ -173,28 +178,64 @@ table {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	
 		.titleSection{
 			@include titleSection;	
 		}
+			.new{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 70px;
+				height: 25px;
+				background-color: $tcheckbutton;
+				position: relative;
+				top: 35px; left: 100px;
+				border-radius: 2px;
+				font-size: 0.7rem;
+				color: darken($tcheckbutton,40%);
+				font-weight: 600;
+				
+			}
 			.cardsMenu{
 				width: 90%;
 				height: 250px;
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
+				border-radius: 15px;
 				background-color: $backgroundwhite;
-			
-					img{
-						width: 100%;
-						height: 60%;
-						border-top-left-radius: 15px;
-						border-top-right-radius: 15px;
+		
+				img{
+					width: 100%;
+					height: 70%;
+					border-top-left-radius: 15px;
+					border-top-right-radius: 15px;
 					}
-						.titles-cards{
-							padding-left: 10px;
+						.text-contents{
+							display: flex;
+							justify-content: space-between;
+							flex-wrap: wrap;
+							padding-top: 10px;
+									
+								.titles-cards{
+							    	padding-left: 10px;
+									width: 60%;
+									
+								}
+									.text-cards{
+										padding-left: 10px;
+										width: 60%;
+										margin-top: 10px;
+										
+									}
+											
+										.fa-heart{
+											width: 30%;
+											
+											display: flex;
+											justify-content: center;
+											// margin-bottom: 20px;
+											font-size: 25px;
+										}
 						}
-							.text-cards{
-								padding-left: 10px;
-							}
 			}
 }
 
