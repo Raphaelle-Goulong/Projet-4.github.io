@@ -64,11 +64,9 @@ table {
   margin-bottom: 3px;
   box-shadow: 3px 3px 3px #d0d0d0;
 }
-@media (min-width: 320px) {
-  .header__navbar img {
-    width: 170px;
-    margin-bottom: 20px;
-  }
+.header__navbar img {
+  width: 170px;
+  margin-bottom: 20px;
 }
 .header__search {
   display: flex;
@@ -92,6 +90,7 @@ table {
 
 .mainRestaurant {
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .mainRestaurant .textUnderNav {
   height: 220px;
@@ -102,8 +101,9 @@ table {
 }
 .mainRestaurant .textUnderNav h1 {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-top: 20px;
+  font-weight: 900;
 }
 .mainRestaurant .textUnderNav .text {
   text-align: center;
@@ -122,13 +122,30 @@ table {
   align-items: center;
   box-shadow: 3px 3px 3px #d0d0d0;
 }
+@media (min-width: 768px) {
+  .mainRestaurant .textUnderNav {
+    display: flex;
+    justify-content: center;
+  }
+  .mainRestaurant .textUnderNav h1 {
+    font-size: 2.1rem;
+  }
+  .mainRestaurant .textUnderNav .text {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .mainRestaurant .textUnderNav h1 {
+    font-size: 2.5rem;
+  }
+}
 
 .functioning {
-  background-color: white;
-  padding: 40px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: white;
+  padding: 40px 0;
 }
 .functioning .titleSection {
   margin: 40px 200px 20px 0px;
@@ -170,7 +187,12 @@ table {
 .functioning .fa-solid:hover {
   color: #9356dc;
 }
-
+@media (min-width: 768px) {
+  .functioning .functioning {
+    display: none;
+    background-color: red;
+  }
+}
 .cards-restaurant {
   display: flex;
   justify-content: center;
@@ -232,6 +254,11 @@ table {
   display: flex;
   justify-content: center;
   font-size: 25px;
+}
+@media (min-width: 370px) and (max-width: 760px) {
+  .cards-restaurant .titleSection {
+    padding: 0 40px 0;
+  }
 }
 
 .footer {
