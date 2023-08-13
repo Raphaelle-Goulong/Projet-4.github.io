@@ -194,16 +194,35 @@ table {
 							color: $violetbutton;
 						}
 					}
-					@media (min-width:768px) {
-						.functioning{
-							display: none;
-							
-							background-color: red;
+					// @MEDIAQUERIES
+					@media (min-width:619px) {
+						.titleSection{
+							width: 100%;
+							margin-left: 20px;
+						}
+						.card-fuctioning{
+							width: 30%;
 						}
 					}
 						@media (min-width:1024px) {
 							
+							.titleSection{
+								display: flex;
+								margin-left: 150px;
+								width: 100%;
+								font-size: 1.5rem;
+							}
+							.card-fuctioning{
+								width: 20%;
+							}
 						}
+						@media (min-width:1440px){
+							.titleSection{
+								margin-left: 150px;
+							}
+						}
+					// @MEDIAQUERIES
+
 }
 
 .cards-restaurant{
@@ -229,54 +248,112 @@ table {
 				font-weight: 600;
 				
 			}
-				.cards-menu-margin{
-						margin-bottom: 20px;
+				.new-none{
+					visibility: hidden;
 				}
 					.cardsMenu{
 						width: 90%;
 						height: 250px;
 						border-radius: 15px;
 						background-color: $backgroundwhite;
-						
+							
 							img{
 								width: 100%;
 								height: 70%;
 								border-top-left-radius: 15px;
 								border-top-right-radius: 15px;
 								object-fit: cover;
-								}
-									.text-contents{
-										display: flex;
-										justify-content: space-between;
-										flex-wrap: wrap;
-										padding-top: 10px;
+							}
+								.text-contents{
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+									padding-top: 10px;
 					
-											.titles-cards{
+										.titles-cards{
+											padding-left: 10px;
+											width: 60%;
+										}
+
+											.text-cards{
 												padding-left: 10px;
 												width: 60%;
-												
+												margin-top: 10px;
 											}
-												.text-cards{
-													padding-left: 10px;
-													width: 60%;
-													margin-top: 10px;
-													
-												}
-														
-													.fa-heart{
-														width: 30%;
+											
+												.btn-heart{
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													margin-right: 10px;
+													width: 30%;
+													border: none;
+													background-color: transparent;
+
+													.fa-heart{	
 														display: flex;
 														justify-content: center;
 														font-size: 25px;
-													}
+														}
+												}
 									}
+
 					}
 					// @mediaQueries
-					@media (min-width:370px) and (max-width:760px) {
+					@media (min-width:370px) {
 						.titleSection{
 							padding: 0 40px 0;
+						}	
+					}
+					@media (min-width:768px) {
+						.titleSection{
+							width: 100%;
+							display: flex;
+							justify-content: flex-start;
+							padding-left: 20px;
 						}
-						
+							.new{
+								display: flex;
+								position: relative;
+								top:20px; left: 290px;
+							}
+								.new-none{
+									visibility: hidden;
+								}
+									.cardsMenu{
+										width: 40%;
+										margin-bottom: 20px;
+										// margin: 20px;
+									}
+								
+					}
+					@media (min-width:1024px){
+						.titleSection{
+								display: flex;
+								margin-left: 130px;
+								width: 100%;
+								font-size: 1.5rem;
+							}
+								.new{
+									position: relative;
+								top:20px; left:400px;
+
+									// left: 320px;
+								}
+					}
+					@media (min-width:1440px){
+						.titleSection{
+								display: flex;
+								width: 100%;
+								
+							}
+								.new{
+									position: relative;
+									left: 100px;
+								}
+								.cardsMenu{
+									width: 35%;
+								}
 					}
 					
 }
@@ -310,6 +387,32 @@ table {
 						
 					}
 				}
+					// @MEDIAQUERIES
+					@media (min-width:728px) {
+						&__logo{
+								background-color: red;
+							}
+							
+						*{
+							display: flex;
+							justify-content: flex-end;
+							flex-direction: row;
+							// background-color: violet;
+			
+							.fa-utensils{
+								display: flex;
+								justify-content: center;
+								align-items: center;
+							}
+							.fa-handshake-angle{
+								align-items: center;
+							}
+						}
+						
+					}
+
+					// @MEDIAQUERIES END
+
 }
 
 // FOOTER END
