@@ -447,13 +447,11 @@ table {
             align-items: center;
         }
     }
-
-    // @MEDIAQUERIES
-    @media (min-width: 728px) {
-        .fa-handshake-angle {
+    .fa-handshake-angle{
+        @media (min-width: 728px){
             display: flex;
             align-items: center;
-        }
+        }    
     }
     // @MEDIAQUERIES END
 }
