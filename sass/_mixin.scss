@@ -18,9 +18,10 @@
        
 }
 @mixin titleSection{
-  margin: 40px 200px 20px 0px;
-  font-size: 1.2rem;
-  
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 1.3rem; 
   
 }
 

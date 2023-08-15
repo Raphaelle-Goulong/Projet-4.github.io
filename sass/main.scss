@@ -253,16 +253,27 @@ table {
     justify-content: center;
     flex-wrap: wrap;
     background-color: $backgroundwhite;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .titleSection {
         @include titleSection;
-        margin-left: 40px;
-        margin-top: 0;
+        margin-left: 10px;
+        @media (min-width: 728px) {
+            width: 100%;
+        }
+        @media (min-width: 1024px) {
+            display: flex;
+            width: 100%;
+            font-size: 1.5rem;
+        }
     }
     .card-fuctioning {
         @include under-nav-shadow;
         @include card-fuctioning;
+        @media (min-width: 728px) {
+            width: 30%;
+        }
     }
     span {
         display: flex;
@@ -285,34 +296,10 @@ table {
         &:hover {
             color: $violetbutton;
         }
-    }
-    // @MEDIAQUERIES
-    @media (min-width: 619px) {
-        .titleSection {
-            width: 100%;
-            margin-left: 20px;
-        }
-        .card-fuctioning {
-            width: 30%;
+        @media (min-width: 728px) {
+            margin-left: 5px;
         }
     }
-    @media (min-width: 1024px) {
-        .titleSection {
-            display: flex;
-            margin-left: 150px;
-            width: 100%;
-            font-size: 1.5rem;
-        }
-        .card-fuctioning {
-            width: 20%;
-        }
-    }
-    @media (min-width: 1440px) {
-        .titleSection {
-            margin-left: 150px;
-        }
-    }
-    // @MEDIAQUERIES
 }
 
 .cards-restaurant {
@@ -320,156 +307,155 @@ table {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    padding-top: 20px;
     @media (min-width: 768px) {
         gap: 50px;
     }
 
     .titleSection {
         @include titleSection;
-
-        padding: 0 40px 0;
+        padding-bottom: 40px;
+        margin-left: 0px;
 
         @media (min-width: 768px) {
             width: 100%;
             display: flex;
             justify-content: flex-start;
-            padding-left: 20px;
+            padding-bottom: 0px;
         }
-        .cardsMenu {
-            position: relative;
+        @media (min-width: 1024px) {
+            font-size: 1.5rem;
+        }
+    }
+    .cardsMenu {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        border-radius: 15px;
+        background-color: $backgroundwhite;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            width: calc(50% - 50px);
+            margin-bottom: 20px;
+        }
+
+        img {
             width: 100%;
-            height: 250px;
-            border-radius: 15px;
-            background-color: $backgroundwhite;
+            height: 70%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+        }
+        .new {
+            display: block;
+            padding: 10px;
+            background-color: $tcheckbutton;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            border-radius: 2px;
+            font-size: 0.7rem;
+            color: darken($tcheckbutton, 40%);
+            font-weight: 600;
+        }
+        .text-contents {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 10px;
 
-            @media (min-width: 768px) {
-                width: calc(50% - 50px);
-                margin-bottom: 20px;
+            .titles-cards {
+                padding-left: 10px;
+                width: 60%;
             }
 
-            img {
-                width: 100%;
-                height: 70%;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                object-fit: cover;
+            .text-cards {
+                padding-left: 10px;
+                width: 60%;
+                margin-top: 10px;
             }
-            .new {
-                display: block;
-                padding: 10px;
-                background-color: $tcheckbutton;
-                position: absolute;
-                top: 35px;
-                right: 50px;
-                border-radius: 2px;
-                font-size: 0.7rem;
-                color: darken($tcheckbutton, 40%);
-                font-weight: 600;
-            }
-            .text-contents {
+
+            .btn-heart {
                 display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                width: 30%;
+                border: none;
+                background-color: transparent;
 
-                .titles-cards {
-                    padding-left: 10px;
-                    width: 60%;
-                }
-
-                .text-cards {
-                    padding-left: 10px;
-                    width: 60%;
-                    margin-top: 10px;
-                }
-
-                .btn-heart {
+                .fa-heart {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    margin-right: 10px;
-                    width: 30%;
-                    border: none;
-                    background-color: transparent;
-
-                    .fa-heart {
-                        display: flex;
-                        justify-content: center;
-                        font-size: 25px;
-                    }
+                    font-size: 25px;
                 }
             }
         }
-        // @mediaQueries
+    }
+}
+// SECTION MENU END
 
-        @media (min-width: 768px) {
-            .cardsMenu {
-                width: calc(50% - 50px);
-                margin-bottom: 20px;
-               
-            }
+// FOOTER
+
+.footer {
+    background-color: $backgroundfooter;
+    height: auto;
+    @media (min-width: 728px) {
+        display: flex;
+        height: 100px;
+        flex-direction: row-reverse;
+    }
+
+    &__logo {
+        margin: 10px 15px;
+        @media (min-width: 728px) {
+            width: 100px;
+            margin-top: 60px;
         }
     }
-    // SECTION MENU END
 
-    // FOOTER
-
-    .footer {
-        background-color: $backgroundfooter;
-        height: auto;
-
-        &__logo {
-            margin: 10px 15px;
-        }
-
-        &__links {
-            display: flex;
-            flex-direction: column;
-            color: $backgroundwhite;
-            margin: 0px 10px;
-            font-size: 15px;
-        }
-
-        li {
-            margin: 10px;
-            .link-text {
-                text-decoration: none;
-                color: $backgroundwhite;
-                padding: 10px;
-            }
-        }
-
-        // @MEDIAQUERIES
+    &__links {
+        display: flex;
+        flex-direction: column;
+        color: $backgroundwhite;
+        margin: 0px 10px;
+        font-size: 15px;
         @media (min-width: 728px) {
             display: flex;
-            height: 100px;
-            flex-direction: row-reverse;
-            &__logo {
-                width: 100px;
-                margin-top: 60px;
-            }
-            &__links {
-                display: flex;
-                justify-content: space-evenly;
-                flex-direction: row;
-                align-items: end;
-            }
-            li {
-                display: flex;
-            }
-            .fa-utensils {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-            }
-            .fa-handshake-angle {
-                display: flex;
-                align-items: center;
-            }
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: end;
         }
-
-        // @MEDIAQUERIES END
     }
 
-    // FOOTER END
+    li {
+        margin: 10px;
+        @media (min-width: 728px) {
+            display: flex;
+        }
+        .link-text {
+            text-decoration: none;
+            color: $backgroundwhite;
+            padding: 10px;
+        }
+    }
+    .fa-utensils {
+        margin-left: 5px;
+        @media (min-width: 728px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    // @MEDIAQUERIES
+    @media (min-width: 728px) {
+        .fa-handshake-angle {
+            display: flex;
+            align-items: center;
+        }
+    }
+    // @MEDIAQUERIES END
 }
+
+// FOOTER END

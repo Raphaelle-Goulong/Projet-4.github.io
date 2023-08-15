@@ -268,13 +268,27 @@ table {
   justify-content: center;
   flex-wrap: wrap;
   background-color: white;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .functioning .titleSection {
-  margin: 40px 200px 20px 0px;
-  font-size: 1.2rem;
-  margin-left: 40px;
-  margin-top: 0;
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+@media (min-width: 728px) {
+  .functioning .titleSection {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning .titleSection {
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+  }
 }
 .functioning .card-fuctioning {
   box-shadow: 3px 3px 3px #d0d0d0;
@@ -288,6 +302,11 @@ table {
   border: none;
   font-size: 0.9rem;
   margin: 10px;
+}
+@media (min-width: 728px) {
+  .functioning .card-fuctioning {
+    width: 30%;
+  }
 }
 .functioning span {
   display: flex;
@@ -310,29 +329,9 @@ table {
 .functioning .fa-solid:hover {
   color: #9356dc;
 }
-@media (min-width: 619px) {
-  .functioning .titleSection {
-    width: 100%;
-    margin-left: 20px;
-  }
-  .functioning .card-fuctioning {
-    width: 30%;
-  }
-}
-@media (min-width: 1024px) {
-  .functioning .titleSection {
-    display: flex;
-    margin-left: 150px;
-    width: 100%;
-    font-size: 1.5rem;
-  }
-  .functioning .card-fuctioning {
-    width: 20%;
-  }
-}
-@media (min-width: 1440px) {
-  .functioning .titleSection {
-    margin-left: 150px;
+@media (min-width: 728px) {
+  .functioning .fa-solid {
+    margin-left: 5px;
   }
 }
 
@@ -341,6 +340,7 @@ table {
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .cards-restaurant {
@@ -348,32 +348,41 @@ table {
   }
 }
 .cards-restaurant .titleSection {
-  margin: 40px 200px 20px 0px;
-  font-size: 1.2rem;
-  padding: 0 40px 0;
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  padding-bottom: 40px;
+  margin-left: 0px;
 }
 @media (min-width: 768px) {
   .cards-restaurant .titleSection {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-bottom: 0px;
   }
 }
-.cards-restaurant .titleSection .cardsMenu {
+@media (min-width: 1024px) {
+  .cards-restaurant .titleSection {
+    font-size: 1.5rem;
+  }
+}
+.cards-restaurant .cardsMenu {
   position: relative;
   width: 100%;
   height: 250px;
   border-radius: 15px;
   background-color: white;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .cards-restaurant .titleSection .cardsMenu {
+  .cards-restaurant .cardsMenu {
     width: calc(50% - 50px);
     margin-bottom: 20px;
   }
 }
-.cards-restaurant .titleSection .cardsMenu img {
+.cards-restaurant .cardsMenu img {
   width: 100%;
   height: 70%;
   border-top-left-radius: 15px;
@@ -381,34 +390,34 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cards-restaurant .titleSection .cardsMenu .new {
+.cards-restaurant .cardsMenu .new {
   display: block;
   padding: 10px;
   background-color: #99e2d0;
   position: absolute;
-  top: 35px;
-  right: 50px;
+  top: 20px;
+  right: 10px;
   border-radius: 2px;
   font-size: 0.7rem;
   color: #278870;
   font-weight: 600;
 }
-.cards-restaurant .titleSection .cardsMenu .text-contents {
+.cards-restaurant .cardsMenu .text-contents {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 10px;
 }
-.cards-restaurant .titleSection .cardsMenu .text-contents .titles-cards {
+.cards-restaurant .cardsMenu .text-contents .titles-cards {
   padding-left: 10px;
   width: 60%;
 }
-.cards-restaurant .titleSection .cardsMenu .text-contents .text-cards {
+.cards-restaurant .cardsMenu .text-contents .text-cards {
   padding-left: 10px;
   width: 60%;
   margin-top: 10px;
 }
-.cards-restaurant .titleSection .cardsMenu .text-contents .btn-heart {
+.cards-restaurant .cardsMenu .text-contents .btn-heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,64 +426,72 @@ table {
   border: none;
   background-color: transparent;
 }
-.cards-restaurant .titleSection .cardsMenu .text-contents .btn-heart .fa-heart {
+.cards-restaurant .cardsMenu .text-contents .btn-heart .fa-heart {
   display: flex;
   justify-content: center;
   font-size: 25px;
 }
-@media (min-width: 768px) {
-  .cards-restaurant .titleSection .cardsMenu {
-    width: calc(50% - 50px);
-    margin-bottom: 20px;
-  }
-}
-.cards-restaurant .footer {
+
+.footer {
   background-color: #353535;
   height: auto;
 }
-.cards-restaurant .footer__logo {
+@media (min-width: 728px) {
+  .footer {
+    display: flex;
+    height: 100px;
+    flex-direction: row-reverse;
+  }
+}
+.footer__logo {
   margin: 10px 15px;
 }
-.cards-restaurant .footer__links {
+@media (min-width: 728px) {
+  .footer__logo {
+    width: 100px;
+    margin-top: 60px;
+  }
+}
+.footer__links {
   display: flex;
   flex-direction: column;
   color: white;
   margin: 0px 10px;
   font-size: 15px;
 }
-.cards-restaurant .footer li {
-  margin: 10px;
-}
-.cards-restaurant .footer li .link-text {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-}
 @media (min-width: 728px) {
-  .cards-restaurant .footer {
-    display: flex;
-    height: 100px;
-    flex-direction: row-reverse;
-  }
-  .cards-restaurant .footer__logo {
-    width: 100px;
-    margin-top: 60px;
-  }
-  .cards-restaurant .footer__links {
+  .footer__links {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: end;
   }
-  .cards-restaurant .footer li {
+}
+.footer li {
+  margin: 10px;
+}
+@media (min-width: 728px) {
+  .footer li {
     display: flex;
   }
-  .cards-restaurant .footer .fa-utensils {
+}
+.footer li .link-text {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.footer .fa-utensils {
+  margin-left: 5px;
+}
+@media (min-width: 728px) {
+  .footer .fa-utensils {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  .cards-restaurant .footer .fa-handshake-angle {
+}
+@media (min-width: 728px) {
+  .footer .fa-handshake-angle {
     display: flex;
     align-items: center;
   }
