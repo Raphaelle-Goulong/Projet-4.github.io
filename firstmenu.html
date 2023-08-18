@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap"
@@ -16,25 +16,47 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./sass/firstmenu.css">
+        <link rel="stylesheet" href="./sass/firstmenu.css" />
         <title>La palette du goût</title>
-</head>
-<body>
-    <header class="hearder">
-        <!-- NAV -->
-        <nav class="header__navbar">
-            <a href="/index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            
+    </head>
+    <body>
+        <!-- HEARDER -->
+        <header class="header">
+            <!-- NAV -->
+            <nav class="header__navbar">
+                <a href="/index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <img
+                    src="./Images et textes Ohmyfood/images/logo/ohmyfood.png"
+                    alt="Images du logo Ohmyfood"
+                />
+            </nav>
+            <!-- NAV END -->
+        </header>
+        <!-- HEARDER END -->
+        <!-- MAIN -->
+
+        <main class="main">
             <img
-                src="./Images et textes Ohmyfood/images/logo/ohmyfood.png"
-                alt="Images du logo Ohmyfood"
+                src="/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt=""
             />
-        </nav>
-        <!-- NAV END -->
-        
-        
-    </header>
-</body>
+            <section class="main__cardMenu">
+                <h1 class="main__title">La palette du goût</h1>
+                <i class="fa-regular fa-heart"></i>
+                <section class="section-content">
+                    <p class="section-content__text">ENTRÉES</p>
+                    <article class="section-content__menus">
+                        <h2>Fricassée d'escargots</h2>
+                        <p>Au piment d'Espelette</p>
+                        <div class="empty"></div>
+                        <span>25€</span>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <!-- MAIN END -->
+    </body>
 </html>
