@@ -347,6 +347,10 @@ table {
     gap: 50px;
   }
 }
+.cards-restaurant a {
+  color: black;
+  text-decoration: none;
+}
 .cards-restaurant .titleSection {
   display: flex;
   width: 100%;

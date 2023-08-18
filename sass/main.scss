@@ -311,7 +311,10 @@ table {
     @media (min-width: 768px) {
         gap: 50px;
     }
-
+    a {
+        color: black;
+        text-decoration: none;
+    }
     .titleSection {
         @include titleSection;
         padding-bottom: 40px;
@@ -447,11 +450,11 @@ table {
             align-items: center;
         }
     }
-    .fa-handshake-angle{
-        @media (min-width: 728px){
+    .fa-handshake-angle {
+        @media (min-width: 728px) {
             display: flex;
             align-items: center;
-        }    
+        }
     }
     // @MEDIAQUERIES END
 }
