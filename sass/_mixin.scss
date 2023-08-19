@@ -4,6 +4,8 @@
 }
 
 @mixin button {
+  display: flex;
+  justify-content: center;
   text-align: center;
   text-decoration: none;
   background: linear-gradient($pinkbutton,$violetbutton);

@@ -166,47 +166,143 @@ table {
 // MAIN
 
 .main {
+    background-color: $backgroundgrey;
+
     img {
         width: 100%;
     }
     &__cardMenu {
+        position: relative;
+        bottom: 50px;
         display: flex;
         padding: 10px;
         // justify-content: center;
         flex-wrap: wrap;
-        height: 300px;
         background-color: $backgroundgrey;
-        border-radius: 30px;
-    }
-    &__title {
-        font-family: $fontText;
-        font-size: 1.6rem;
-        font-weight: 400;
-        padding-top: 40px;
-    }
-    .fa-heart {
-        padding-left: 20px;
-        padding-top: 40px;
-        align-items: center;
-        font-size: 25px;
-    }
-    .section-content {
-        // padding-top: 20px;
-        width: 100%;
-
-        &__text {
-            border-bottom: 3px solid $tcheckbutton;
-            height: 20px;
-            width: 40px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        &__title {
+            font-family: $fontText;
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding-top: 40px;
         }
-        &__menus {
+        .fa-heart {
+            padding-left: 20px;
+            padding-top: 40px;
+            align-items: center;
+            font-size: 25px;
+        }
+        .section-contents {
             width: 100%;
-            background-color: $backgroundwhite;
-            border-radius: 15px;
-            padding: 15px;
-            // margin: 10px;
-            @include under-nav-shadow;
+
+            &__text {
+                border-bottom: 3px solid $tcheckbutton;
+                height: 20px;
+                width: 40px;
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+            &__menus {
+                display: flex;
+                height: 60px;
+                flex-wrap: wrap;
+                align-items: center;
+                background-color: $backgroundwhite;
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 15px;
+                @include under-nav-shadow;
+
+                .menu-title {
+                    font-size: 1.0rem;
+                    width: 70%;
+                }
+                .menu-text {
+                    width: 70%;
+                    font-size: 0.9rem;
+                    margin-top: 4px;
+                }
+                .empty {
+                    width: 10%;
+                }
+                .price {
+                    width: 20%;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            &__order {
+                @include button;
+                @include under-nav-shadow;
+            }
         }
     }
 }
 // MAIN END
+// FOOTER
+
+.footer {
+    background-color: $backgroundfooter;
+    height: auto;
+    @media (min-width: 728px) {
+        display: flex;
+        height: 100px;
+        flex-direction: row-reverse;
+    }
+
+    &__logo {
+        margin: 10px 15px;
+        @media (min-width: 728px) {
+            width: 100px;
+            margin-top: 60px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        color: $backgroundwhite;
+        margin: 0px 10px;
+        font-size: 15px;
+        @media (min-width: 728px) {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: end;
+        }
+    }
+
+    li {
+        margin: 10px;
+        @media (min-width: 728px) {
+            display: flex;
+        }
+        .link-text {
+            text-decoration: none;
+            color: $backgroundwhite;
+            padding: 10px;
+        }
+    }
+    .fa-utensils {
+        margin-left: 5px;
+        @media (min-width: 728px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    .fa-handshake-angle {
+        @media (min-width: 728px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
