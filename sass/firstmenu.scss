@@ -140,11 +140,18 @@ table {
     &__navbar {
         width: 100%;
         display: flex;
-        // justify-content: center;
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
-
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30%;
+            // justify-content: center;
+        }
+        @media (min-width: 1440px) {
+            gap: 40%;
+        }
         a {
             text-decoration: none;
             padding-right: 10px;
@@ -154,6 +161,9 @@ table {
             .fa-arrow-left {
                 display: flex;
                 color: black;
+            }
+            @media (min-width: 768px) {
+                width: 5%;
             }
         }
         img {
@@ -166,22 +176,39 @@ table {
 // MAIN
 
 .main {
-    background-color: $backgroundgrey;
-
+    // background-color: $backgroundgrey; 
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
     img {
         width: 100%;
+        @media (min-width: 768px) {
+            height : 500px;
+            object-fit: cover; 
+        }
     }
     &__cardMenu {
-        position: relative;
-        bottom: 50px;
         display: flex;
+        position: relative;
+        bottom: 50px;  
         padding: 10px;
         // justify-content: center;
         flex-wrap: wrap;
         background-color: $backgroundgrey;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            position: relative;
+            bottom: 30px;
+        }
         &__title {
+           
             font-family: $fontText;
             font-size: 1.6rem;
             font-weight: 400;
@@ -195,7 +222,11 @@ table {
         }
         .section-contents {
             width: 100%;
-
+            @media (min-width: 768px) {
+                padding-left: 15%;
+                padding-right: 15%;
+                
+            }
             &__text {
                 border-bottom: 3px solid $tcheckbutton;
                 height: 20px;
@@ -215,7 +246,7 @@ table {
                 @include under-nav-shadow;
 
                 .menu-title {
-                    font-size: 1.0rem;
+                    font-size: 1rem;
                     width: 70%;
                 }
                 .menu-text {
@@ -239,6 +270,7 @@ table {
             display: flex;
             justify-content: center;
             margin-top: 30px;
+            margin-bottom: 30px;
             &__order {
                 @include button;
                 @include under-nav-shadow;
