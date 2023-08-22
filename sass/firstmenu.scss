@@ -284,6 +284,7 @@ table {
 .footer {
     background-color: $backgroundfooter;
     height: auto;
+    margin-top: -50px;
     @media (min-width: 728px) {
         display: flex;
         height: 100px;
