@@ -241,6 +241,13 @@ button {
         .btn {
             @include button;
             @include under-nav-shadow;
+            transition-property: transform;
+            transition-duration: 1000ms;
+            &:hover{
+                transform: scale(0.98);
+                box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;            
+            }
+            
         }
     }
     // @mediaQueries

@@ -227,6 +227,12 @@ button:hover {
   color: white;
   align-items: center;
   box-shadow: 3px 3px 3px #d0d0d0;
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.mainRestaurant .textUnderNav .btn:hover {
+  transform: scale(0.98);
+  box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;
 }
 @media (min-width: 768px) {
   .mainRestaurant .textUnderNav {
