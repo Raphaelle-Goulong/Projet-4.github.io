@@ -414,10 +414,10 @@ button:hover {
   border: none;
   background-color: transparent;
 }
-.cards-restaurant .cardsMenu .text-contents .btn-heart:hover .full-heart {
+.cards-restaurant .cardsMenu .text-contents .btn-heart:active .empty-heart {
   opacity: 1;
 }
-.cards-restaurant .cardsMenu .text-contents .btn-heart:hover .empty-heart {
+.cards-restaurant .cardsMenu .text-contents .btn-heart:active .full-heart {
   opacity: 1;
 }
 .cards-restaurant .cardsMenu .text-contents .btn-heart .empty-heart {
@@ -431,7 +431,6 @@ button:hover {
   font-size: 25px;
   opacity: 0;
   z-index: 2;
-  transition: 1ms;
   background: linear-gradient(#FF79DA, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
