@@ -1,3 +1,23 @@
+@keyframes loading {
+  0% {
+    color: #99e2d0;
+  }
+  60% {
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -226,6 +246,7 @@ table {
   margin-right: 10px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .main__cardMenu .btn-heart .fa-heart {
   padding-left: 20px;
@@ -239,17 +260,25 @@ table {
 .main__cardMenu .btn-heart:active .full-heart {
   opacity: 1;
 }
+.main__cardMenu .btn-heart:hover .empty-heart {
+  opacity: 1;
+}
+.main__cardMenu .btn-heart:hover .full-heart {
+  opacity: 1;
+}
 .main__cardMenu .btn-heart .empty-heart {
   display: flex;
   justify-content: center;
   font-size: 25px;
   color: black;
   position: absolute;
+  transition: opacity 400ms;
 }
 .main__cardMenu .btn-heart .full-heart {
   font-size: 25px;
   opacity: 0;
   z-index: 2;
+  transition: all 400ms;
   background: linear-gradient(#FF79DA, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
@@ -274,40 +303,40 @@ table {
 .main__cardMenu .section-contents__menus {
   display: flex;
   height: 60px;
-  flex-wrap: wrap;
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
   margin-bottom: 15px;
   box-shadow: 3px 3px 3px #d0d0d0;
+  cursor: pointer;
+}
+.main__cardMenu .section-contents__menus:hover .check {
+  width: 30%;
+}
+.main__cardMenu .section-contents__menus:active .check {
+  width: 30%;
 }
 .main__cardMenu .section-contents__menus .menu-title {
   font-size: 1rem;
   width: 70%;
-  background-color: aquamarine;
-}
-.main__cardMenu .section-contents__menus .menu-text {
-  width: 70%;
-  font-size: 0.9rem;
-  margin-top: 4px;
-  background-color: violet;
-}
-.main__cardMenu .section-contents__menus .empty {
-  width: 10%;
+  height: 100%;
 }
 .main__cardMenu .section-contents__menus .price {
-  width: 100%;
+  width: 30%;
+  height: 100%;
   font-weight: 600;
   display: flex;
   justify-content: flex-end;
-  background-color: rgb(227, 133, 93);
 }
 .main__cardMenu .section-contents__menus .check {
-  width: 30%;
+  width: 0%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  transition: all 400ms;
 }
 .main__cardMenu .section-contents__menus .check .fa-check {
   width: 20px;

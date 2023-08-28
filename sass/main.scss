@@ -134,48 +134,81 @@ table {
 * {
     font-family: $fontTitle;
 }
-.container-loading {
+.container-loader {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     position: fixed;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(49, 48, 48, 0.937);
-    z-index: 2;
+    background-color: rgba(48, 48, 48, 0.938);
+    z-index: 10;
+    animation-name: loader;
+    animation-duration: 5s ;
+    animation-fill-mode: forwards;
 }
-// .loading {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+.svg{
+    display: flex;
+    justify-content: center;
+    
+}
 
-//     margin: 20px;
-//     width: 200px;
-//     height: 200px;
-//     animation-name: laoding;
-//     animation-duration: 5000ms;
-//     border-radius: 150px;
-//     animation-iteration-count: infinite;
-//     background-color: white;
-//     margin-top: 30px;
-//     // animation-delay: 1s;
-// }
-button {
-    font-family: $fontText;
-    color: white;
-    transition-property: transform;
-    transition-duration: 1000ms;
-    transition: transform 400ms;
-    &:hover {
-        transform: scale(1.15);
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 250px;
+    height: 100px;
+    border-radius: 25px;
+    // background-color: rgb(100, 12, 12);
+    margin-top: 30px;
+    
+    .fa-solid {
+        margin: 3px;
+    }
+    .loading {
+        font-family: $fontText;
+        font-size: 1.5rem;
+        margin: 5px;
+        animation-name: loading;
+        animation: loading 1.7s linear infinite;
+        
     }
 
-    // transform: rotate(20deg);
-    // animation: test 10s linear infinite;
+    .loading:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    .loading:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    .loading:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    .loading:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+    .loading:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+    .loading:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+    .loading:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+    .loading:nth-child(8) {
+        animation-delay: 0.8s;
+    }
+    
+    
+   
 }
+
 // NAV BAR
 .header {
     &__navbar {
@@ -243,11 +276,10 @@ button {
             @include under-nav-shadow;
             transition-property: transform;
             transition-duration: 1000ms;
-            &:hover{
+            &:hover {
                 transform: scale(0.98);
-                box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;            
+                box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;
             }
-            
         }
     }
     // @mediaQueries

@@ -1,21 +1,31 @@
-// @keyframes laoding {
-//     0% {
-//         background-color: white;
-//     }
-//     10% {
-//         background-color: rgb(141, 9, 55);
-//     }
-//     20% {
-//         background-color: rgb(23, 163, 16);
-//     }
-//     50% {
-//         background-color: rgb(31, 103, 145);
-//     } 
-//     70% {
-//         background-color: rgb(176, 176, 19);
-//     }
-//     100% {
-//         background-color: rgb(44, 5, 65);
-//     }
+@keyframes loading {
+    0% {
+        color: #99e2d0;
+        // transform:translateY(0px);
+    }
+    60% {
+        color: rgb(255, 255, 255);
+        // transform: translateY(10px);
+    }
+   
+      100% {
+        color: rgb(0, 0, 0);
+        // transform: translateY(0px);
+          
+      }
+     
+      
     
-// }
+}
+
+@keyframes loader{
+  from{
+   opacity: 1;
+
+  }
+  to{
+   opacity: 0;  
+   z-index: -1;
+  }
+  
+}
