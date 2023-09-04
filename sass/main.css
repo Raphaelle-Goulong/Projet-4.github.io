@@ -18,6 +18,14 @@
     z-index: -1;
   }
 }
+@keyframes svg {
+  from {
+    scale: 0.5;
+  }
+  to {
+    scale: 1.5;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,12 +179,12 @@ table {
   z-index: 10;
   animation-name: loader;
   animation-duration: 5s;
-  animation-fill-mode: forwards;
 }
 
 .svg {
   display: flex;
   justify-content: center;
+  animation-name: svg 1.7s;
 }
 
 .loader {
@@ -268,14 +276,35 @@ table {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .mainRestaurant .textUnderNav {
+    display: flex;
+    justify-content: center;
+  }
+}
 .mainRestaurant .textUnderNav h1 {
   text-align: center;
   font-size: 1.5rem;
   padding-top: 20px;
   font-weight: 900;
 }
+@media (min-width: 768px) {
+  .mainRestaurant .textUnderNav h1 {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mainRestaurant .textUnderNav h1 {
+    font-size: 2.5rem;
+  }
+}
 .mainRestaurant .textUnderNav .text {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .mainRestaurant .textUnderNav .text {
+    width: 100%;
+  }
 }
 .mainRestaurant .textUnderNav .btn {
   display: flex;
@@ -294,25 +323,9 @@ table {
   transition-duration: 1000ms;
 }
 .mainRestaurant .textUnderNav .btn:hover {
-  transform: scale(0.98);
-  box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;
-}
-@media (min-width: 768px) {
-  .mainRestaurant .textUnderNav {
-    display: flex;
-    justify-content: center;
-  }
-  .mainRestaurant .textUnderNav h1 {
-    font-size: 2.1rem;
-  }
-  .mainRestaurant .textUnderNav .text {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .mainRestaurant .textUnderNav h1 {
-    font-size: 2.5rem;
-  }
+  opacity: 0.75;
+  transition: all 1s;
+  box-shadow: rgba(67, 67, 67, 0.477) 0px 5px 15px;
 }
 
 .functioning {
@@ -358,6 +371,8 @@ table {
 @media (min-width: 728px) {
   .functioning .card-fuctioning {
     width: 30%;
+    display: flex;
+    justify-content: center;
   }
 }
 .functioning span {
@@ -487,6 +502,12 @@ table {
   opacity: 1;
 }
 .cards-restaurant .cardsMenu .text-contents .btn-heart:active .full-heart {
+  opacity: 1;
+}
+.cards-restaurant .cardsMenu .text-contents .btn-heart:hover .empty-heart {
+  opacity: 1;
+}
+.cards-restaurant .cardsMenu .text-contents .btn-heart:hover .full-heart {
   opacity: 1;
 }
 .cards-restaurant .cardsMenu .text-contents .btn-heart .empty-heart {

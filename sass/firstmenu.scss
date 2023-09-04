@@ -207,7 +207,7 @@ table {
             position: relative;
             bottom: 30px;
         }
-       
+
         &__title {
             font-family: $fontText;
             font-size: 1.6rem;
@@ -306,21 +306,16 @@ table {
                     height: 100%;
                     display: flex;
                     justify-content: center;
-                    // flex-wrap: wrap;
                     flex-direction: column;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
-
-                    // align-items: center;
-                    // padding: 5px;
-
                     h3 {
                         padding: 10px 0 10px 10px;
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
-                     }
+                    }
                     p {
                         padding: 0 0 10px 10px;
                         text-overflow: ellipsis;
@@ -374,8 +369,9 @@ table {
                 transition-property: transform;
                 transition-duration: 1000ms;
                 &:hover {
-                    transform: scale(0.98);
-                    box-shadow: rgba(67, 67, 67, 0.35) 0px 5px 15px;
+                    opacity: 0.80;
+                    transition: all 1s;
+                    box-shadow: rgba(67, 67, 67, 0.477) 0px 5px 15px;
                 }
             }
         }
