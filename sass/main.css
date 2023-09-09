@@ -178,13 +178,28 @@ table {
   background-color: rgba(48, 48, 48, 0.938);
   z-index: 10;
   animation-name: loader;
-  animation-duration: 5s;
 }
 
 .svg {
   display: flex;
   justify-content: center;
-  animation-name: svg 1.7s;
+  align-items: center;
+  animation-name: image 1.7s;
+  padding: 0;
+}
+.svg .food1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 155px;
+  z-index: 3;
+}
+.svg .food3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 135px;
+  z-index: 2;
 }
 
 .loader {
@@ -497,6 +512,9 @@ table {
   width: 30%;
   border: none;
   background-color: transparent;
+}
+.cards-restaurant .cardsMenu .text-contents .btn-heart:active {
+  transition: all;
 }
 .cards-restaurant .cardsMenu .text-contents .btn-heart:active .empty-heart {
   opacity: 1;

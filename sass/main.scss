@@ -148,13 +148,30 @@ table {
     background-color: rgba(48, 48, 48, 0.938);
     z-index: 10;
     animation-name: loader;
-    animation-duration: 5s;
+    // animation-duration: 5s;
     // animation-fill-mode: forwards;
 }
 .svg {
     display: flex;
     justify-content: center;
-    animation-name: svg 1.7s;
+    align-items: center;
+    animation-name: image 1.7s;
+    padding: 0;
+    
+   .food1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 155px;
+    z-index: 3;
+   }
+   .food3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 135px;
+    z-index: 2;
+   }
 }
 
 .loader {
@@ -437,6 +454,7 @@ table {
                 border: none;
                 background-color: transparent;
                 &:active {
+                    transition: all;
                     .empty-heart {
                         opacity: 1;
                     }
