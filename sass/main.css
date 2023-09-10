@@ -178,42 +178,41 @@ table {
   background-color: rgba(48, 48, 48, 0.938);
   z-index: 10;
   animation-name: loader;
-}
-
-.svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-name: image 1.7s;
-  padding: 0;
-}
-.svg .food1 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  left: 155px;
-  z-index: 3;
-}
-.svg .food3 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  right: 135px;
-  z-index: 2;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px;
   width: 250px;
   height: 100px;
   border-radius: 25px;
   margin-top: 30px;
 }
-.loader .fa-solid {
-  margin: 3px;
+.loader .svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: image 1.7s;
+  padding: 0;
+}
+.loader .svg .food1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 110px;
+  z-index: 3;
+}
+.loader .svg .food3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 100px;
+  z-index: 2;
 }
 .loader .loading {
   font-family: "Shrikhand", cursive;
