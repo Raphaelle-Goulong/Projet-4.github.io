@@ -16,7 +16,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./sass/firstmenu.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
         <title>La palette du goût</title>
     </head>
     <body>
@@ -24,7 +24,7 @@
         <header class="header">
             <!-- NAV -->
             
-            <nav class="header__navbar">
+            <nav class="header__navbarmenu">
                 <a href="/index.html">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
@@ -52,126 +52,123 @@
                 </div>
                 <section class="section-contents">
                     <h2 class="section-contents__text">ENTRÉES</h2>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Fricassée d'escargots</h3>
-                            <p>Au piment d'Espelette</p>
-                        </div>
-                        <div class="price">25€</div>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Foie gras de canard mi-cuit</h3>
-                            <p class="menu-text">
-                                Et ses copeaux de truffe noire
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">35€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Œuf au plat</h3>
-                            <p class="menu-text">
-                                Assaisonné à la truffe sur lit de caviar
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">20€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
+                    <div class="section-contents__slide">
+                        <article class="section-contents__menus slide1">
+                            <div class="menu-title">
+                                <h3>Fricassée d'escargots</h3>
+                                <p>Au piment d'Espelette</p>
+                            </div>
+                            <div class="price">25€</div>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </article>
+                        <article class="section-contents__menus slide2">
+                            <div class="menu-title">
+                                <h3>Foie gras de canard mi-cuit</h3>
+                                <p class="menu-text">
+                                    Et ses copeaux de truffe noire
+                                </p>
+                            </div>
+                            <span class="price">35€</span>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </article>
+                        <article class="section-contents__menus slide3">
+                            <div class="menu-title">
+                                <h3>Œuf au plat</h3>
+                                <p class="menu-text">
+                                    Assaisonné à la truffe sur lit de caviar
+                                </p>
+                            </div>
+                            <span class="price">20€</span>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="section-contents">
                     <h2 class="section-contents__text">PLATS</h2>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Filet de bœuf aux herbes</h3>
-                            <p class="menu-text">
-                                Accompagné de sa ribambelle de légumes
-                            </p>
+                        <div class="section-contents__slide">
+                            <article class="section-contents__menus slide1">
+                                <div class="menu-title">
+                                    <h3>Filet de bœuf aux herbes</h3>
+                                    <p class="menu-text">
+                                        Accompagné de sa ribambelle de légumes
+                                    </p>
+                                </div>
+                                <span class="price">40€</span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
+                            <article class="section-contents__menus slide2">
+                                <div class="menu-title">
+                                    <h3>Parmentier de queue de bœuf</h3>
+                                    <p class="menu-text">
+                                        À la truffe noire sur sa purée de panais
+                                    </p>
+                                </div>
+                                <span class="price">35€</span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
+                            <article class="section-contents__menus slide3">
+                                <div class="menu-title">
+                                    <h3>Filet de turbot</h3>
+                                    <p class="menu-text">Aux agrumes</p>
+                                </div>
+                                <span class="price">44€ </span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
                         </div>
-                        <div class="empty"></div>
-                        <span class="price">40€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Parmentier de queue de bœuf</h3>
-                            <p class="menu-text">
-                                À la truffe noire sur sa purée de panais
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">35€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Filet de turbot</h3>
-                            <p class="menu-text">Aux agrumes</p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">44€ </span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
                 </section>
 
                 <section class="section-contents">
                     <h2 class="section-contents__text">DESSERTS</h2>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Paris-Brest</h3>
-                            <p class="menu-text">
-                                Revisité
-                            </p>
+                        <div class="section-contents__slide">
+                            <article class="section-contents__menus slide1">
+                                <div class="menu-title">
+                                    <h3>Paris-Brest</h3>
+                                    <p class="menu-text">
+                                        Revisité
+                                    </p>
+                                </div>
+                                <span class="price">18€</span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
+                            <article class="section-contents__menus slide2">
+                                <div class="menu-title">
+                                    <h3>Macaron au chocolat d'exception </h3>
+                                    <p class="menu-text">
+                                        Et glace à la vanille de Madagascar
+                                    </p>
+                                </div>
+                                <span class="price">22€</span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
+                            <article class="section-contents__menus slide3">
+                                <div class="menu-title">
+                                    <h3>Mousse au chocolat</h3>
+                                    <p class="menu-text">
+                                        Au piment d'Espelette et à la truffe noire
+                                    </p>
+                                </div>
+                                <span class="price">23€</span>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </article>
                         </div>
-                        <div class="empty"></div>
-                        <span class="price">18€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Macaron au chocolat d'exception </h3>
-                            <p class="menu-text">
-                                Et glace à la vanille de Madagascar
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">22€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Mousse au chocolat</h3>
-                            <p class="menu-text">
-                                Au piment d'Espelette et à la truffe noire
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">23€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
                 </section>
                 <div class="btn">
                     <a href="#" class="btn__order">Commander</a>
@@ -196,7 +193,7 @@
                     ><a href="#" class="link-text">Devenir partenaire</a>
                 </li>
                 <li><a href="#" class="link-text">Mentions légales</a></li>
-                <li><a href="#" class="link-text">Contact</a></li>
+                <li><a href="mailto:Ohmyfood@mail.fr" class="link-text"> Contact</a></li>
             </ul>
         </footer>
         <!-- Footer End -->

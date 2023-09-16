@@ -7,36 +7,72 @@
         color: rgb(255, 255, 255);
         // transform: translateY(10px);
     }
-   
-      100% {
+
+    100% {
         color: rgb(0, 0, 0);
         // transform: translateY(0px);
-          
-      }
-     
-      
-    
+    }
 }
 
-@keyframes loader{
-  from{
-   opacity: 1;
-
-  }
-  to{
-   opacity: 0;  
-   z-index: -1;
-  }
-  
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
-@keyframes svg{
-  from{
-   scale: (0.5);
 
-  }
-  to{
-   scale:(1.5) ;
-  }
-  
+
+@keyframes foody {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes foody1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes foody2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }

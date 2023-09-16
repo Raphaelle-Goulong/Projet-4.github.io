@@ -16,14 +16,14 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./sass/firstmenu.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
         <title>La note enchantée</title>
     </head>
     <body>
         <!-- HEARDER -->
         <header class="header">
             <!-- NAV -->
-            <nav class="header__navbar">
+            <nav class="header__navbarmenu">
                 <a href="/index.html">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
@@ -51,7 +51,8 @@
                 </div> 
                 <section class="section-contents">
                     <h2 class="section-contents__text">ENTRÉES</h2>
-                    <article class="section-contents__menus">
+                    <div class="section-contents__slide">
+                    <article class="section-contents__menus slide1">
                         <div class="menu-title">
                             <h3>Ravioles de foie gras </h3>
                             <p>Accompagnées de leur crème à la truffe</p>
@@ -61,7 +62,7 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
-                    <article class="section-contents__menus">
+                    <article class="section-contents__menus slide2">
                         <div class="menu-title">
                             <h3>Caviar osciètre </h3>
                             <p class="menu-text">
@@ -74,7 +75,7 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
-                    <article class="section-contents__menus">
+                    <article class="section-contents__menus slide3">
                         <div class="menu-title">
                             <h3>Homard et espuma de potiron</h3>
                             <p class="menu-text">
@@ -87,7 +88,7 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
-                    <article class="section-contents__menus">
+                    <article class="section-contents__menus slide4">
                         <div class="menu-title">
                             <h3>Foie gras de canard cuit entier</h3>
                             <p class="menu-text">
@@ -100,11 +101,13 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
+                </div>
                 </section>
 
                 <section class="section-contents">
                     <h2 class="section-contents__text">PLATS</h2>
-                    <article class="section-contents__menus">
+                    <div class="section-contents__slide">
+                    <article class="section-contents__menus slide1">
                         <div class="menu-title">
                             <h3>Noix de coquilles Saint-Jacques</h3>
                             <p class="menu-text">
@@ -117,7 +120,7 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
-                    <article class="section-contents__menus">
+                    <article class="section-contents__menus slide2">
                         <div class="menu-title">
                             <h3>Langoustine poêlée</h3>
                             <p class="menu-text">
@@ -130,7 +133,7 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
-                    <article class="section-contents__menus">
+                    <article class="section-contents__menus slide3">
                         <div class="menu-title">
                             <h3>Mijoté de queue de bœuf</h3>
                             <p class="menu-text">Et riz sauvage aux zestes de citron</p>
@@ -141,49 +144,52 @@
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </article>
+                </div>
                 </section>
 
                 <section class="section-contents">
                     <h2 class="section-contents__text">DESSERTS</h2>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Macaron noisette et chocolat</h3>
-                            <p class="menu-text">
-                                Glace au caramel brun et sel de Guérande
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">18€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Baba au rhum revisité  </h3>
-                            <p class="menu-text">
-                                Avec son coulis de citron
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">22€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
-                    <article class="section-contents__menus">
-                        <div class="menu-title">
-                            <h3>Tarte au citron meringuée </h3>
-                            <p class="menu-text">
-                                Déstructurée
-                            </p>
-                        </div>
-                        <div class="empty"></div>
-                        <span class="price">23€</span>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </article>
+                    <div class="section-contents__slide">
+                        <article class="section-contents__menus slide1">
+                            <div class="menu-title">
+                                <h3>Macaron noisette et chocolat</h3>
+                                <p class="menu-text">
+                                    Glace au caramel brun et sel de Guérande
+                                </p>
+                            </div>
+                            <div class="empty"></div>
+                            <span class="price">18€</span>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </article>
+                        <article class="section-contents__menus slide2">
+                            <div class="menu-title">
+                                <h3>Baba au rhum revisité  </h3>
+                                <p class="menu-text">
+                                    Avec son coulis de citron
+                                </p>
+                            </div>
+                            <div class="empty"></div>
+                            <span class="price">22€</span>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </article>
+                        <article class="section-contents__menus slide3">
+                            <div class="menu-title">
+                                <h3>Tarte au citron meringuée </h3>
+                                <p class="menu-text">
+                                    Déstructurée
+                                </p>
+                            </div>
+                            <div class="empty"></div>
+                            <span class="price">23€</span>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </article>
+                    </div>
                 </section>
                 <div class="btn">
                 <a href="#" class="btn__order">Commander</a>
@@ -210,7 +216,7 @@
                     ><a href="#" class="link-text">Devenir partenaire</a>
                 </li>
                 <li><a href="#" class="link-text">Mentions légales</a></li>
-                <li><a href="#" class="link-text">Contact</a></li>
+                <li><a href="mailto:Ohmyfood@mail.fr" class="link-text"> Contact</a></li>
             </ul>
         </footer>
         <!-- Footer End -->
