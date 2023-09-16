@@ -748,7 +748,7 @@ table {
   background-color: rgba(48, 48, 48, 0.938);
   z-index: 10;
   animation-name: loader;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
 }
 
