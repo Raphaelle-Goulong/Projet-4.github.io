@@ -322,7 +322,7 @@ table {
 }
 @media (min-width: 768px) {
   .main img {
-    height: 500px;
+    height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
