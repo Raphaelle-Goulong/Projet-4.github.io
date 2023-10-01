@@ -1,16 +1,13 @@
 @keyframes loading {
     0% {
         color: #99e2d0;
-        // transform:translateY(0px);
     }
     60% {
-        color: rgb(255, 255, 255);
-        // transform: translateY(10px);
+        color: rgb(255, 255, 255);     
     }
 
     100% {
-        color: rgb(0, 0, 0);
-        // transform: translateY(0px);
+        color: rgb(0, 0, 0);       
     }
 }
 

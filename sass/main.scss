@@ -301,9 +301,8 @@ table {
         }
         .text {
             text-align: center;
-            @media (min-width: 768px) {
-                width: 100%;
-            }
+            width: 100%;
+           
         }
         .btn {
             @include button;
@@ -343,25 +342,36 @@ table {
         @include under-nav-shadow;
         @include card-fuctioning;
         @media (min-width: 728px) {
-            width: 30%;
+            width: 300px;
             display: flex;
             justify-content: center;
         }
-    }
-    span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        background-color: $violetbutton;
-        border-radius: 20px;
-        color: $backgroundwhite;
-        margin: 0px;
-        position: relative;
-        right: 10px;
-    }
+        @media (min-width: 1440px) {
+            width: 450px;
+            
+        }
 
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: $violetbutton;
+            border-radius: 20px;
+            color: $backgroundwhite;
+            margin: 0px;
+            position: relative;
+            right: 4%;
+            // right: 10px;
+            @media (min-width: 728px) {
+                right: 55px;
+            }
+            @media (min-width: 1440px) {
+                right: 130px;
+            }
+        }
+    }
     .fa-solid {
         color: $fontAwarsomeIcon;
         font-size: 18px;
