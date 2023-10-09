@@ -307,11 +307,13 @@ table {
         .btn {
             @include button;
             @include under-nav-shadow;
+            animation: button ;
             transition-property: transform;
             transition-duration: 1000ms;
+            transition: all 2s;
             &:hover {
                 opacity: 0.75;
-                transition: all 1s;
+                transition: all 2s;
                 box-shadow: rgba(67, 67, 67, 0.477) 0px 5px 15px;
             }
         }
@@ -466,8 +468,8 @@ table {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-right: 10px;
-                width: 30%;
+                margin-right: 30px;
+                // width: 30%;
                 border: none;
                 background-color: transparent;
                 &:active {
@@ -479,6 +481,7 @@ table {
                         opacity: 1;
                     }
                 }
+
                 &:hover {
                     .empty-heart {
                         opacity: 1;
@@ -503,6 +506,7 @@ table {
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    transition-duration: 2s;
                 }
             }
         }

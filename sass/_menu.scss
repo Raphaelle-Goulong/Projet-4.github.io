@@ -133,6 +133,7 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                transition-duration: 2s;
             }
         }
         .section-contents {
@@ -257,6 +258,7 @@
                 @include under-nav-shadow;
                 transition-property: transform;
                 transition-duration: 1000ms;
+                transition: all 2s;
                 &:hover {
                     opacity: 0.80;
                     transition: all 1s;

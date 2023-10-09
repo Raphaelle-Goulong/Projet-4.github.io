@@ -18,6 +18,17 @@
     z-index: -1;
   }
 }
+@keyframes button {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes foody {
   0% {
     opacity: 1;
@@ -83,6 +94,17 @@
   to {
     opacity: 0;
     z-index: -1;
+  }
+}
+@keyframes button {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes foody {
@@ -263,6 +285,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition-duration: 2s;
 }
 .main__cardMenu .section-contents {
   width: 100%;
@@ -388,6 +411,7 @@
   box-shadow: 3px 3px 3px #d0d0d0;
   transition-property: transform;
   transition-duration: 1000ms;
+  transition: all 2s;
 }
 .main__cardMenu .btn__order:hover {
   opacity: 0.8;
@@ -774,12 +798,14 @@ table {
   color: white;
   align-items: center;
   box-shadow: 3px 3px 3px #d0d0d0;
+  animation: button;
   transition-property: transform;
   transition-duration: 1000ms;
+  transition: all 2s;
 }
 .mainRestaurant .textUnderNav .btn:hover {
   opacity: 0.75;
-  transition: all 1s;
+  transition: all 2s;
   box-shadow: rgba(67, 67, 67, 0.477) 0px 5px 15px;
 }
 
@@ -963,8 +989,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
-  width: 30%;
+  margin-right: 30px;
   border: none;
   background-color: transparent;
 }
@@ -998,6 +1023,7 @@ table {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition-duration: 2s;
 }
 
 .footer {
